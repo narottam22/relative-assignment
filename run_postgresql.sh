@@ -1,5 +1,6 @@
 docker run -d \
  --name  postgres_db \
+ --network int_net \
  -p 6000:5432 \
  -v postgres_vol:/var/lib/postgresql/data \
  -e POSTGRES_DB=contract_database \
